@@ -112,12 +112,13 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+              style: TextStyle(color: _counter % 2 == 0 ? Colors.green : Colors.red ),
             ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.redAccent,
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
